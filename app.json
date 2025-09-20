@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Businessapp",
-    "slug": "Businessapp",
+    "slug": "businessapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,7 +16,11 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.abishek17.businessapp"
     },
     "web": {
       "bundler": "metro",
@@ -33,10 +37,23 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c6607630-c560-43ea-ad21-6e3c0a9726f8"
+      }
+    },
+    "owner": "abishek17"
   }
 }
